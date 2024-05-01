@@ -1,0 +1,71 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+
+    @{
+        <h2>Employee Data</h2>
+        <div>
+            class="filter-container">
+            <form id="filter-form" method="get">
+                <label for="sort-letter">Filter by Name Letter:</label>
+                <select name="sort-letter" id="sort-letter">
+                    <option value="all">All</option>
+                    <option value="S">S</option>
+                    <option value="J">H</option>
+                    <!-- Add more options for other letters -->
+                </select>
+                <!-- Add a submit button to trigger form submission -->
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+        <table id="employee-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <!-- Add more columns as needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Harsha</td>
+                    <td>50000</td>
+                    <!-- Add more rows as needed -->
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Harry</td>
+                    <td>60000</td>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <td>3</td>
+                    <td>Steev</td>
+                    <td>85000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Stella</td>
+                    <td>90000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sai</td>
+                    <td>100000</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    }
+
+</body>
+</html>
